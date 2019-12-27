@@ -6,7 +6,6 @@ RUN apt-get update \
   && apt-get install -y libssl-dev \
   && apt-get install -y gdal-bin proj-bin libgdal-dev libproj-dev \
   && Rscript -e "devtools::install_github('rstudio/blogdown', dependencies = TRUE)" \
-  && Rscript -e "devtools::install_github('rstudio/pagedown', dependencies = TRUE)" \
   && Rscript -e "install.packages(c('car', 'MASS', 'lme4', 'nlme', 'pls', 'Renvlp', 'kableExtra'))" \
   && Rscript -e "install.packages(c('tidyverse', 'pander', 'tables', 'xtable', 'ggfortify'))" \
   && Rscript -e "devtools::install_github('rstudio/DT', dependencies = TRUE)" \
